@@ -20,7 +20,9 @@ class Locations {
     return response;
   }
 
-  
+  getCitiesByCountryCode(code) {
+    return this.cities.filter(city => city.country_code === code);
+  }
 } 
 
 const locations = new Locations(api); 
