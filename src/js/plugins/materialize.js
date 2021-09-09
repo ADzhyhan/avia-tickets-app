@@ -7,4 +7,22 @@ M.FormSelect.init(select);
 
 export function getSelectInstance(elem) {
   return M.FormSelect.getInstance(elem);
+} 
+
+//Init autocomplete
+const autocomplete = document.querySelectorAll('.autocomplete'); 
+M.Autocomplete.init(autocomplete); 
+
+export function getAutocompleteInstance(elem) {
+  return M.Autocomplete.getInstance(elem);
+} 
+
+//Init datepickers 
+const datepickers = document.querySelectorAll('.datepicker');
+M.Datepicker.init(datepickers, {
+  showClearBtn: true,
+}); 
+
+export function getDatePickerInstance(elem) {
+  return M.Datepicker.getInstance(elem);
 }
